@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"jsx": "preserve",
+		"jsxImportSource": "pota",
+		"types": ["pota"],
+		"noEmit": true,
+		"isolatedModules": true,
+
+		// added
+		"skipLibCheck": true,
+		"allowImportingTsExtensions": true
+	}
+}
