@@ -12,8 +12,9 @@ const result = (
 		{/* Start with an initial value of 5 */}
 		<kitchen-sink
 			ref={setSink}
-			on:error={e => e.error} // type test
-			count="5"
+			on:error={e => e.error} // working, yay!
+			count="5" // error, yay!
+			on:blah={e => e.blah} // error (ok, but not yay, TS making "on:blah" type any)
 		></kitchen-sink>
 	</>
 ) as unknown as () => Element[]
